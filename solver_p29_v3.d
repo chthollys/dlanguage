@@ -1,10 +1,10 @@
-module solver29;
+module solverp29_v3;
 import std.stdio;
 import std.algorithm.sorting;
 import std.algorithm;
 import std.conv;
 
-class SolveCA29{
+class Solver_P29{
     int[] solverCase(int[] x){
         int[] index=new int[x.length];       
         makeIndex!("a < b")(x,index);

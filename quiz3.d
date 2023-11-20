@@ -1,17 +1,17 @@
 module main;
-import solver29;
+import solver_p29_v3;
 import std.stdio;
 import std.conv;
 import std.algorithm;
 
 void main(){
-    int ncase;
+    int nofcase;
     write("Input total val ; ");
-    readf("%d\n",ncase);
-    string sval;
+    readf("%d\n",nofcase);
+    string nofvals;
     write("Values ; ");
     readf("%s\n",sval);
-    int[] val= new SolveCA29().split(sval,ncase);
-    int[] index= new SolveCA29().solverCase(val);
+    int[] value= new Solver_P29().split(nofvals,nofcase);
+    int[] index= new Solver_P29().solverCase(value);
     index.each!(x => writef("%d ",x+1)),write("\n");
 }
