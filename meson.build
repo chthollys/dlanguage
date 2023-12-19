@@ -1,12 +1,4 @@
-project('competition', 'd')
+project('p388_output', 'd')
 compiler = meson.get_compiler('d')
-sources = ['p384.d', 'io.d'
-]
-
-
-#deps = [
-#  dependency('std.container'),
-#]
-
-executable('app', sources)
-
+source = ['p388v2.d']
+executable('app', source)
